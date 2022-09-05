@@ -9,7 +9,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1100,3121.6</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1080.8,3057.6</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>FetchCustomerDetails_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="31">
@@ -96,21 +96,17 @@
       <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="FetchCustomerDetails" sap:VirtualizedContainerService.HintSize="1110.4,3056.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="FetchCustomerDetails" sap:VirtualizedContainerService.HintSize="1091.2,2992.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1048,2933.6" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1048,2901.6" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Try>
-        <Sequence sap:VirtualizedContainerService.HintSize="1011.2,2692.8" sap2010:WorkflowViewState.IdRef="Sequence_4">
+        <Sequence sap:VirtualizedContainerService.HintSize="992,2660.8" sap2010:WorkflowViewState.IdRef="Sequence_4">
           <Sequence.Variables>
-            <Variable x:TypeArguments="x:String" Name="vWIID">
-              <Variable.Default>
-                <Literal x:TypeArguments="x:String">86390493</Literal>
-              </Variable.Default>
-            </Variable>
+            <Variable x:TypeArguments="x:String" Default="86390493" Name="vWIID" />
           </Sequence.Variables>
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -118,37 +114,23 @@
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
           <ui:LogMessage DisplayName="Log message" sap:VirtualizedContainerService.HintSize="948.8,102.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Fetching customer details --&gt; Start&quot;]" />
-          <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="948.8,111.2" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
-            <ui:MultipleAssign.AssignOperations>
-              <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
-                <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
-                  <ui:AssignOperation.To>
-                    <OutArgument x:TypeArguments="x:String">[vWIID]</OutArgument>
-                  </ui:AssignOperation.To>
-                  <ui:AssignOperation.Value>
-                    <InArgument x:TypeArguments="x:String">86390493</InArgument>
-                  </ui:AssignOperation.Value>
-                </ui:AssignOperation>
-              </scg:List>
-            </ui:MultipleAssign.AssignOperations>
-          </ui:MultipleAssign>
           <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="948.8,62.4" sap2010:WorkflowViewState.IdRef="CommentOut_1">
             <ui:CommentOut.Body>
-              <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="492.8,234.4" sap2010:WorkflowViewState.IdRef="Sequence_7">
+              <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="473.6,202.4" sap2010:WorkflowViewState.IdRef="Sequence_14">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="430.4,111.2" sap2010:WorkflowViewState.IdRef="MultipleAssign_3">
+                <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="430.4,111.2" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
                   <ui:MultipleAssign.AssignOperations>
                     <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
-                      <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_4">
+                      <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
                         <ui:AssignOperation.To>
                           <OutArgument x:TypeArguments="x:String">[vWIID]</OutArgument>
                         </ui:AssignOperation.To>
                         <ui:AssignOperation.Value>
-                          <InArgument x:TypeArguments="x:String">[in_TransactionItem.SpecificContent("WIID").ToString]</InArgument>
+                          <InArgument x:TypeArguments="x:String">86390493</InArgument>
                         </ui:AssignOperation.Value>
                       </ui:AssignOperation>
                     </scg:List>
@@ -163,6 +145,20 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:CommentOut>
+          <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="948.8,111.2" sap2010:WorkflowViewState.IdRef="MultipleAssign_3">
+            <ui:MultipleAssign.AssignOperations>
+              <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+                <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_4">
+                  <ui:AssignOperation.To>
+                    <OutArgument x:TypeArguments="x:String">[vWIID]</OutArgument>
+                  </ui:AssignOperation.To>
+                  <ui:AssignOperation.Value>
+                    <InArgument x:TypeArguments="x:String">[in_TransactionItem.SpecificContent("WIID").ToString]</InArgument>
+                  </ui:AssignOperation.Value>
+                </ui:AssignOperation>
+              </scg:List>
+            </ui:MultipleAssign.AssignOperations>
+          </ui:MultipleAssign>
           <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: ACME System 1 - Dashboard" sap:VirtualizedContainerService.HintSize="948.8,2173.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="66f1b8fb-74e6-4f02-b786-8b97ae380486" Version="V2">
             <uix:NApplicationCard.Body>
               <ActivityAction x:TypeArguments="x:Object">
@@ -214,7 +210,7 @@
                     <uix:NGetText.Target>
                       <uix:TargetAnchorable BrowserURL="https://acme-test.uipath.com/work-items/86390493" DesignTimeRectangle="383, 512, 467, 75" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Client ID:'" FullSelectorArgument="&lt;webctrl tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='P' type='' class='' aaname='*' check:text='*Client ID*' /&gt;" Guid="c783a443-64e2-41b7-aae4-5288f5c542b1" ImageBase64="" InformativeScreenshot="a05cf55e6ddd90bb769fb9b39bedc5c0.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1 - Work Items' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive">
                         <uix:TargetAnchorable.Anchors>
-                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                             <uix:Target DesignTimeRectangle="383, 475, 467, 25" ElementType="Text" FriendlyName="'Client Information'" FullSelectorArgument="&lt;webctrl tag='H4' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H4' type='' class='' aaname='Client Information Details' check:innerText='Client Information Details' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
                           </scg:List>
                         </uix:TargetAnchorable.Anchors>
